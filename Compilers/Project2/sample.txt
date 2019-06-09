@@ -1,0 +1,32 @@
+func main
+localloc 4
+bgnstmt 4
+t1 := local 0
+t2 := 0
+t3 := t1 =i t2
+bgnstmt 5
+label L1
+t4 := local 0
+t5 := @i t4
+t6 := 3
+t7 := t5 <i t6
+bt t7 B1
+br B2
+label L2
+bgnstmt 6
+bgnstmt 7
+t8 := local 0
+t9 := 1
+t10 := @i t8
+t11 := t10 +i t9
+t12 := t8 =i t11
+br B3
+label L3
+B1=L2
+B2=L3
+B3=L1
+bgnstmt 9
+t13 := local 0
+t14 := @i t13
+reti t14
+fend

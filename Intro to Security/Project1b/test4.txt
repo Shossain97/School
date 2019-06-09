@@ -1,0 +1,6 @@
+nohup: ignoring input
+Starting
+KEY: ZIENF
+PLAINTEXT: IMAGINATIONISMOREIMPORTANTTHANKNOWLEDGE
+finished computation at Sun Feb 17 08:12:01 2019
+elapsed time: 53.2352s

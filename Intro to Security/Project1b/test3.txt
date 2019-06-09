@@ -1,0 +1,6 @@
+nohup: ignoring input
+Starting
+KEY: IWKD
+PLAINTEXT: EXPERIENCEISTHETEACHEROFALLTHINGS
+finished computation at Sun Feb 17 08:11:00 2019
+elapsed time: 1.93446s

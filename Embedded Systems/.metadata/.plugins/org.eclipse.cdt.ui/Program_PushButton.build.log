@@ -1,0 +1,22 @@
+
+**** Build of configuration Debug for project Program_PushButton ****
+
+"C:\\TI_CodeComposer\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../Tasks/Task_PushButton.c'
+'Invoking: ARM Compiler'
+"C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M3 --code_state=16 -me --include_path="C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --include_path="C:/TI_CodeComposer/StellarisWare-LM3S1968" --include_path="H:/EECS_388/TI_ARM_Projects/Program_PushButton" -g --gcc --define="ccs" --define=PART_LM3S1968 --diag_wrap=off --diag_warning=225 --display_error_number --abi=eabi --printf_support=nofloat -k --asm_listing --preproc_with_compile --preproc_dependency="Tasks/Task_PushButton.d" --obj_directory="Tasks"  "../Tasks/Task_PushButton.c"
+"../Tasks/Task_PushButton.c", line 133: warning #190-D: enumerated type mixed with another type
+"../Tasks/Task_PushButton.c", line 138: warning #190-D: enumerated type mixed with another type
+"../Tasks/Task_PushButton.c", line 143: warning #190-D: enumerated type mixed with another type
+"../Tasks/Task_PushButton.c", line 148: warning #190-D: enumerated type mixed with another type
+"../Tasks/Task_PushButton.c", line 153: warning #190-D: enumerated type mixed with another type
+'Finished building: ../Tasks/Task_PushButton.c'
+' '
+'Building target: Program_PushButton.out'
+'Invoking: ARM Linker'
+"C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M3 --code_state=16 -me -g --gcc --define="ccs" --define=PART_LM3S1968 --diag_wrap=off --diag_warning=225 --display_error_number --abi=eabi --printf_support=nofloat -k --asm_listing -z -m"Program_PushButton.map" --stack_size=0x800 --heap_size=0x800 -i"C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/lib" -i"C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --reread_libs --display_error_number --warn_sections --diag_wrap=off --xml_link_info="Program_PushButton_linkInfo.xml" --rom_model -o "Program_PushButton.out" "./Program_PushButton.obj" "./Program_PushButton_startup.obj" "./Drivers/UARTStdio_Initialization.obj" "./Drivers/rit128x96x4.obj" "./Drivers/uartstdio.obj" "./Tasks/Task_LEDBlink.obj" "./Tasks/Task_PushButton.obj" "./Tasks/Task_ReportSysTick.obj" "./Tasks/Task_Speakerbuzz.obj" "../lm3s1968.cmd"  -llibc.a -l"C:/TI_CodeComposer/StellarisWare-LM3S1968/driverlib/ccs-cm3/Debug/driverlib-cm3.lib" 
+<Linking>
+'Finished building target: Program_PushButton.out'
+' '
+
+**** Build Finished ****

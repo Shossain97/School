@@ -1,0 +1,116 @@
+TI ARM Assembler PC v15.12.1 Wed Apr 26 16:08:47 2017
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+../Tasks/AsmCompute.asm                                              PAGE    1
+
+       1                    ;;*****************************************************************************
+       2                    ;;
+       3                    ;; Assembly language subroutine
+       4                    ;;
+       5                    ;; Author: Gary J. Minden
+       6                    ;; Organization: KU/EECS/EECS 388
+       7                    ;; Date: 2014-04-18
+       8                    ;; Version: 1.0
+       9                    ;;
+      10                    ;; Purpose: Assembly language subroutine
+      11                    ;;
+      12                    ;; Notes:
+      13                    ;;
+      14                    ;;*****************************************************************************
+      15                    ;;
+      16                    ;;
+      17                    ;; This subroutine computes a value based on four input arguments.
+      18                    ;; The arguments are assumed to be in CPU registers R0 - R3
+      19                    ;; (aka A1 - A4).
+      20                    ;; The result is returned in R0.
+      21                    ;;
+      22                    ;; Declare sections and external references
+      23                            .global AsmCompute ; Declare entry point as a global symbol
+      24                    ;; No constant data
+      25                    ;; No variable allocation
+      26                    ;; Program instructions
+      27 00000000           .text ; Program section
+      28 00000000           AsmCompute: ; Entry point
+      29                    ;;
+      30                    ;; Save necessary registers
+      31                    ;;
+      32                    ;; Since this subroutine does not use registers other than R0 - R3,
+      33                    ;; and we do not call another subroutine, we don't need to save
+      34                    ;; any registers.
+      35                    ;;
+      36                    ;;
+      37                    ;; Allocate local variables on the Stack
+      38                    ;;
+      39 00000000 1FF0E92D          PUSH {R4-R12} ; [KEEP 32-BIT INS]
+      40                    ;; Since this subroutine does not have local variables,
+      41                    ;; no Stack space need be allocated.
+      42                    ;;
+      43                    ;;
+      44                    ;; For demonstration, this subroutine computes R0 + R1 + R2 + R3
+      45                    ;; and returns the result in R0.
+      46                    ;;
+      47                    ;; You should replace the following three instructions with the
+      48                    ;; the instructions necessary to carry out your assigned
+      49                    ;; algebraic assignment statements.
+      50                    ;;
+      51                    ;;X=B/C^B*A+D/C
+      52                    ;;B/C=R4
+      53 00000004 F4F2FB91   SDIV  R4, R1, R2 ; [KEEP 32-BIT INS]
+      54                     ;;
+      55                     ;;B*A=R5
+TI ARM Assembler PC v15.12.1 Wed Apr 26 16:08:47 2017
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+../Tasks/AsmCompute.asm                                              PAGE    2
+
+      56 00000008 F500FB01   MUL  R5, R1, R0 ; [KEEP 32-BIT INS]
+      57                     ;;
+      58                     ;;D/C=R6
+      59 0000000c F6F2FB93   SDIV  R6, R3, R2 ; [KEEP 32-BIT INS]
+      60                     ;;
+      61                     ;;B*A+D/C=R7
+      62 00000010 19AF       ADDS  R7, R5, R6 ; [ORIG 16-BIT INS]
+      63                     ;;
+      64                     ;;B/C^(B*A+D/C)=R8
+      65 00000012 0807EA84   EOR  R8, R4, R7 ; [KEEP 32-BIT INS]
+      66                     ;;
+      67                     ;;Y=A*C+B&A^D^B
+      68                     ;;Only R8 is necessary now
+      69                     ;;A*C=R4
+      70 00000016 F402FB00   MUL R4, R0,R2 ; [KEEP 32-BIT INS]
+      71                     ;;
+      72                     ;;A*C+B=R5
+      73 0000001a 1865       ADDS  R5, R4, R1 ; [ORIG 16-BIT INS]
+      74                     ;;
+      75                     ;;""&A=R6
+      76 0000001c 0600EA05   AND R6, R5, R0 ; [KEEP 32-BIT INS]
+      77                     ;;
+      78                     ;;""^D=R7
+      79 00000020 0703EA86   EOR R7, R6, R3 ; [KEEP 32-BIT INS]
+      80                     ;;
+      81                     ;;""^B=R9
+      82 00000024 0901EA87   EOR R9, R7, R1 ; [KEEP 32-BIT INS]
+      83                    
+      84                    
+      85                    ;;Adding the two
+      86                    
+      87 00000028 0009EB18   ADDS R0, R8, R9 ; [KEEP 32-BIT INS]
+      88                    ;;
+      89                    ;; Return from the subroutine with the result in R0
+      90                    ;;
+      91                    ;;POP the variables I allocated
+      92 0000002c 1FF0E8BD          POP {R4-R12} ; [KEEP 32-BIT INS]
+      93 00000030 4770              BX LR ; Branch to the program address in ; [ORIG 16-BIT INS]
+      94                    ;;the Link Register
+      95 00000032           .end
+
+--------------------------
+Thumb2 Statistics
+--------------------------
+Number of Thumb2 ins converted to Thumb = 0 (0%)
+Number of Thumb ins in input = 5 (31%)
+Number of Thumb2 ins encoded as Thumb2 = 11 (100%)
+Number of Thumb2 ins converted to 2 OPND Thumb = 0
+
+
+No Assembly Errors, No Assembly Warnings

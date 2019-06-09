@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;Copy of ADC_Pot/Tasks/Task_ADCsampling.c&apos; to &apos;Task_CircuitSampling.c&apos;" description="Rename resource &apos;Task_ADCsampling.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Tasks/Task_ADCsampling.c" name="Task_CircuitSampling.c" stamp="1489006210892" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;Copy of ADC_Pot/Tasks/Task_UARTcom.c&apos; to &apos;Task_ADC.c&apos;" description="Rename resource &apos;Task_UARTcom.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Tasks/Task_UARTcom.c" name="Task_ADC.c" stamp="1489012520529" updateReferences="true"/>
+</session>

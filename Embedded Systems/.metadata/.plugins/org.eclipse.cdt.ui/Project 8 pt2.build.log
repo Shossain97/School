@@ -1,0 +1,19 @@
+
+**** Build of configuration Debug for project Project 8 pt2 ****
+
+"C:\\TI_CodeComposer\\ccsv6\\utils\\bin\\gmake" -k all 
+'Invoking: ARM Hex Utility'
+"C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armhex"  -o "Project 8 pt2.hex"  "Project 8 pt2.out" 
+Translating to Extended Tektronix format...
+   "Project 8 pt2.out" .intvecs ==> .intvecs
+   "Project 8 pt2.out" .text ==> .text
+   "Project 8 pt2.out" .const ==> .const
+   "Project 8 pt2.out" .cinit ==> .cinit
+warning: section Project 8 pt2.out(.text) was padded by 2 to a size of 22680 to
+   satisfy the specified memory width of 4
+warning: section Project 8 pt2.out(.const) was padded by 2 to a size of 1260 to
+   satisfy the specified memory width of 4
+'Finished building: Project 8 pt2.hex'
+' '
+
+**** Build Finished ****

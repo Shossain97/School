@@ -1,0 +1,30 @@
+
+**** Build of configuration Debug for project Project 8 ****
+
+"C:\\TI_CodeComposer\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../Tasks/Task_TimeOfDay.c'
+'Invoking: ARM Compiler'
+"C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M3 --code_state=16 -me --include_path="H:/EECS_388/TI_ARM_Projects/Project 8" --include_path="H:/EECS_388/TI_ARM_Projects/Project 8/Source/portable/CCS/ARM_CM3" --include_path="H:/EECS_388/TI_ARM_Projects/Project 8/Source/include" --include_path="C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --include_path="C:/TI_CodeComposer/StellarisWare-LM3S1968" -g --gcc --define="ccs" --define=PART_LM3S1968 --define=ARM_CM3 --super_quiet --diag_wrap=off --diag_warning=225 --display_error_number --abi=eabi --printf_support=full -k --asm_listing --preproc_with_compile --preproc_dependency="Tasks/Task_TimeOfDay.d" --obj_directory="Tasks"  "../Tasks/Task_TimeOfDay.c"
+"../Tasks/Task_TimeOfDay.c", line 48: warning #179-D: variable "TimerStatus_1" was declared but never referenced
+'Finished building: ../Tasks/Task_TimeOfDay.c'
+' '
+'Building target: Project 8.out'
+'Invoking: ARM Linker'
+"C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M3 --code_state=16 -me -g --gcc --define="ccs" --define=PART_LM3S1968 --define=ARM_CM3 --super_quiet --diag_wrap=off --diag_warning=225 --display_error_number --abi=eabi --printf_support=full -k --asm_listing -z -m"Project 8.map" --stack_size=0x0800 --heap_size=0x0800 -i"C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/lib" -i"C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --reread_libs --display_error_number --warn_sections --diag_wrap=off --xml_link_info="Project 8_linkInfo.xml" --rom_model -o "Project 8.out" "./FreeRTOS_LM3S_Startup.obj" "./Main_Blinky.obj" "./heap_2.obj" "./Drivers/UARTStdio_Initialization_LM3S1968.obj" "./Drivers/rit128x96x4.obj" "./Drivers/uartstdio.obj" "./Source/croutine.obj" "./Source/event_groups.obj" "./Source/list.obj" "./Source/queue.obj" "./Source/tasks.obj" "./Source/timers.obj" "./Source/portable/CCS/ARM_CM3/port.obj" "./Source/portable/CCS/ARM_CM3/portasm.obj" "./Tasks/Task_Blinky.obj" "./Tasks/Task_ReportSysTick.obj" "./Tasks/Task_TimeOfDay.obj" "../lm3s1968.cmd"  -l"C:/TI_CodeComposer/StellarisWare-LM3S1968/driverlib/ccs-cm3/Debug/driverlib-cm3.lib" -llibc.a 
+'Finished building target: Project 8.out'
+' '
+'Invoking: ARM Hex Utility'
+"C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armhex"  -o "Project 8.hex"  "Project 8.out" 
+Translating to Extended Tektronix format...
+   "Project 8.out" .intvecs ==> .intvecs
+   "Project 8.out" .text ==> .text
+   "Project 8.out" .const ==> .const
+   "Project 8.out" .cinit ==> .cinit
+warning: section Project 8.out(.text) was padded by 2 to a size of 22740 to
+   satisfy the specified memory width of 4
+warning: section Project 8.out(.const) was padded by 2 to a size of 1260 to
+   satisfy the specified memory width of 4
+'Finished building: Project 8.hex'
+' '
+
+**** Build Finished ****

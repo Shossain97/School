@@ -1,0 +1,6 @@
+nohup: ignoring input
+Starting
+KEY: NICHOLS
+PLAINTEXT: INTELLECTUALSSOLVEPROBLEMSGENIUSESPREVENTTHEM
+finished computation at Sun Feb 17 19:59:14 2019
+elapsed time: 42361.4s

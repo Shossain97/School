@@ -1,0 +1,17 @@
+
+**** Build of configuration Debug for project Project 9 ****
+
+"C:\\TI_CodeComposer\\ccsv6\\utils\\bin\\gmake" -k all 
+'Invoking: ARM Hex Utility'
+"C:/TI_CodeComposer/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armhex"  -o "Project 9.hex"  "Project 9.out" 
+Translating to Extended Tektronix format...
+   "Project 9.out" .intvecs ==> .intvecs
+   "Project 9.out" .text ==> .text
+   "Project 9.out" .const ==> .const
+   "Project 9.out" .cinit ==> .cinit
+warning: section Project 9.out(.const) was padded by 2 to a size of 1052 to
+   satisfy the specified memory width of 4
+'Finished building: Project 9.hex'
+' '
+
+**** Build Finished ****

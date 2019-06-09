@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;Project 8/Tasks/Task_PWM.c&apos;" deleteContents="false" description="Delete resource &apos;Project 8/Tasks/Task_PWM.c&apos;" element1="/Project 8/Tasks/Task_PWM.c" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1492026865427"/>
+</session>
